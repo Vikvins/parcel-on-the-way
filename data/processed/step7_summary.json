@@ -1,0 +1,161 @@
+{
+  "seed": 42,
+  "n_synthetic": 200,
+  "storage_days": 7,
+  "service_time_min": 4.0,
+  "methods": {
+    "baseline_home_straight": {
+      "delay": {
+        "n": 200,
+        "n_observed": 151,
+        "n_censored": 49,
+        "mean_delay_days": 0.0,
+        "median_delay_days": 0,
+        "share_within_1_day": 0.755,
+        "share_within_storage": 0.755,
+        "storage_days": 7
+      },
+      "delay_separate_trip": {
+        "n": 200,
+        "n_observed": 200,
+        "n_censored": 0,
+        "mean_delay_days": 0.0,
+        "median_delay_days": 0.0,
+        "share_within_1_day": 1.0,
+        "share_within_storage": 1.0,
+        "storage_days": 7
+      },
+      "mean_detour_min": 4.413174603174603,
+      "median_detour_min": 2.48,
+      "share_detour_le_5": 0.7037037037037037,
+      "mean_home_walk_min": 18.397000000000002
+    },
+    "baseline_home_walk": {
+      "delay": {
+        "n": 200,
+        "n_observed": 161,
+        "n_censored": 39,
+        "mean_delay_days": 0.0,
+        "median_delay_days": 0,
+        "share_within_1_day": 0.805,
+        "share_within_storage": 0.805,
+        "storage_days": 7
+      },
+      "delay_separate_trip": {
+        "n": 200,
+        "n_observed": 200,
+        "n_censored": 0,
+        "mean_delay_days": 0.0,
+        "median_delay_days": 0.0,
+        "share_within_1_day": 1.0,
+        "share_within_storage": 1.0,
+        "storage_days": 7
+      },
+      "mean_detour_min": 3.3347979797979797,
+      "median_detour_min": 2.48,
+      "share_detour_le_5": 0.8080808080808081,
+      "mean_home_walk_min": 17.4782
+    },
+    "ours": {
+      "delay": {
+        "n": 200,
+        "n_observed": 200,
+        "n_censored": 0,
+        "mean_delay_days": 0.0,
+        "median_delay_days": 0.0,
+        "share_within_1_day": 1.0,
+        "share_within_storage": 1.0,
+        "storage_days": 7
+      },
+      "delay_separate_trip": {
+        "n": 200,
+        "n_observed": 200,
+        "n_censored": 0,
+        "mean_delay_days": 0.0,
+        "median_delay_days": 0.0,
+        "share_within_1_day": 1.0,
+        "share_within_storage": 1.0,
+        "storage_days": 7
+      },
+      "mean_detour_min": 1.1122999999999998,
+      "median_detour_min": 0.63,
+      "share_detour_le_5": 0.99,
+      "mean_home_walk_min": 31.87725
+    }
+  },
+  "wins_delay": {
+    "vs_straight": 0,
+    "vs_walk": 0,
+    "n": 200
+  },
+  "wins_detour": {
+    "vs_straight": 123,
+    "vs_walk": 118,
+    "n": 200
+  },
+  "real_user": {
+    "date": "2026-10-14",
+    "rows": [
+      {
+        "method": "baseline_home_straight",
+        "point_id": "PVZ-TEST-02",
+        "point_name": "Тест ПВЗ «Бардина»",
+        "arrival_weekday": "wed",
+        "delay_days": 0,
+        "within_1_day": true,
+        "within_storage": true
+      },
+      {
+        "method": "baseline_home_walk",
+        "point_id": "PVZ-TEST-01",
+        "point_name": "Тест ПВЗ «У трамвая 60-летия»",
+        "arrival_weekday": "wed",
+        "delay_days": 0,
+        "within_1_day": true,
+        "within_storage": true
+      },
+      {
+        "method": "ours",
+        "point_id": "PVZ-TEST-01",
+        "point_name": "Тест ПВЗ «У трамвая 60-летия»",
+        "arrival_weekday": "wed",
+        "delay_days": 0,
+        "within_1_day": true,
+        "within_storage": true
+      }
+    ],
+    "summary": {
+      "baseline_home_straight": {
+        "n": 1,
+        "n_observed": 1,
+        "n_censored": 0,
+        "mean_delay_days": 0.0,
+        "median_delay_days": 0,
+        "share_within_1_day": 1.0,
+        "share_within_storage": 1.0,
+        "storage_days": 7
+      },
+      "baseline_home_walk": {
+        "n": 1,
+        "n_observed": 1,
+        "n_censored": 0,
+        "mean_delay_days": 0.0,
+        "median_delay_days": 0,
+        "share_within_1_day": 1.0,
+        "share_within_storage": 1.0,
+        "storage_days": 7
+      },
+      "ours": {
+        "n": 1,
+        "n_observed": 1,
+        "n_censored": 0,
+        "mean_delay_days": 0.0,
+        "median_delay_days": 0,
+        "share_within_1_day": 1.0,
+        "share_within_storage": 1.0,
+        "storage_days": 7
+      }
+    }
+  },
+  "note": "Pickup points are fictional — pipeline check only."
+}

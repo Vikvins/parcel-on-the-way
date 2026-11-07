@@ -1,0 +1,14 @@
+id,address,type,hours_mon,hours_tue,hours_wed,hours_thu,hours_fri,hours_sat,hours_sun,max_weight_kg,source_url,checked_date,lat,lon,geocode_status
+,,"",,,,,,,,,"",,,,
+# INSTRUCTIONS / ИНСТРУКЦИЯ
+# 1. Заполните строки: id (уникальный), address (полный адрес), type (ПВЗ или постамат),
+#    hours_* в формате "10:00-21:00" или "closed", max_weight_kg (можно пусто → 31),
+#    source_url (ссылка на карточку пункта), checked_date (YYYY-MM-DD).
+# 2. lat/lon/geocode_status заполняет скрипт:
+#      PYTHONPATH=src .venv/bin/python scripts/06_prepare_cdek_points.py --csv data/cdek_points.csv
+# 3. Затем эксперимент на этом же файле:
+#      PYTHONPATH=src .venv/bin/python scripts/05_experiment.py --csv data/cdek_points.csv
+# 4. Часы: "10:00-21:00" или "closed". Не оставляйте мусор в полях часов.
+# 5. После геокодинга проверьте карту data/processed/cdek_points_check_map.png
+# --- example row (delete before real collection) ---
+EXAMPLE-01,"Москва, Ленинский проспект, 4",ПВЗ,10:00-21:00,10:00-21:00,10:00-21:00,10:00-21:00,10:00-21:00,10:00-20:00,closed,15,https://example.cdek.ru/pvz/example,2026-10-15,,,,

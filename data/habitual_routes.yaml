@@ -1,0 +1,115 @@
+# Привычные маршруты — редактируемые вручную.
+# Значения departure_time — ПРИМЕРЫ. Реальное время выхода меняется от дня к дню;
+# в эксперименте (step 7) время будет выбираться случайно из диапазонов ниже.
+#
+# Пешие ноги считаются по графу; поездки на трамвае/метро НЕ роутятся.
+
+defaults:
+  walk_speed_kmh: 5.0
+  service_time_min: 4          # 3–5 мин на выдачу; фильтр часов работы
+  timezone: Europe/Moscow
+  # Примерный вес посылки для фильтра max_weight_kg (кг).
+  example_parcel_weight_kg: 2.0
+
+# Диапазоны для случайной генерации времени выхода в эксперименте.
+experiment_departure_ranges:
+  morning: { start: "08:00", end: "10:30" }
+  evening: { start: "16:00", end: "21:00" }
+
+# id точек совпадают с parcel_on_the_way.graph.LANDMARKS
+habitual_routes:
+  # ---- утро, будни: из дома в МИСИС ----
+  - id: morning_tram_metro
+    label: "утро · трамвай + метро"
+    period: morning
+    weekdays: [mon, tue, wed, thu, fri]
+    departure_time: "08:30"          # пример; покидаем home
+    origin: home
+    destination: misis
+    walk_legs:
+      - from: home
+        to: tram_60letiya
+        label: "пешком до трамвая «Проспект 60-летия Октября»"
+      - from: oktyabrskaya_exit
+        to: misis
+        label: "пешком от м. «Октябрьская» до МИСИС"
+    transfers:
+      - mode: tram
+        from: tram_60letiya
+        to: metro_leninsky_south
+        label: "трамвай до м. «Ленинский проспект»"
+        ride_min: 10            # пример; включая ожидание
+      - mode: metro
+        from: metro_leninsky_south
+        to: oktyabrskaya_exit
+        label: "метро до м. «Октябрьская»"
+        ride_min: 10            # пример; включая ожидание
+
+  - id: morning_metro_only
+    label: "утро · только метро"
+    period: morning
+    weekdays: [mon, tue, wed, thu, fri]
+    departure_time: "08:30"
+    origin: home
+    destination: misis
+    walk_legs:
+      - from: home
+        to: metro_leninsky_south
+        label: "пешком до м. «Ленинский проспект (южный)»"
+      - from: oktyabrskaya_exit
+        to: misis
+        label: "пешком от м. «Октябрьская» до МИСИС"
+    transfers:
+      - mode: metro
+        from: metro_leninsky_south
+        to: oktyabrskaya_exit
+        label: "метро до м. «Октябрьская»"
+        ride_min: 10
+
+  # ---- вечер, будни: из МИСИС домой ----
+  - id: evening_tram_metro
+    label: "вечер · трамвай + метро"
+    period: evening
+    weekdays: [mon, tue, wed, thu, fri]
+    departure_time: "18:30"          # пример; покидаем misis
+    origin: misis
+    destination: home
+    walk_legs:
+      - from: misis
+        to: oktyabrskaya_exit
+        label: "пешком от МИСИС до м. «Октябрьская»"
+      - from: tram_60letiya
+        to: home
+        label: "пешком от трамвая «Проспект 60-летия Октября» домой"
+    transfers:
+      - mode: metro
+        from: oktyabrskaya_exit
+        to: metro_leninsky_south
+        label: "метро до м. «Ленинский проспект»"
+        ride_min: 10
+      - mode: tram
+        from: metro_leninsky_south
+        to: tram_60letiya
+        label: "трамвай до «Проспект 60-летия Октября»"
+        ride_min: 10
+
+  - id: evening_metro_only
+    label: "вечер · только метро"
+    period: evening
+    weekdays: [mon, tue, wed, thu, fri]
+    departure_time: "18:30"
+    origin: misis
+    destination: home
+    walk_legs:
+      - from: misis
+        to: oktyabrskaya_exit
+        label: "пешком от МИСИС до м. «Октябрьская»"
+      - from: metro_leninsky_south
+        to: home
+        label: "пешком от м. «Ленинский проспект (южный)» домой"
+    transfers:
+      - mode: metro
+        from: oktyabrskaya_exit
+        to: metro_leninsky_south
+        label: "метро до м. «Ленинский проспект»"
+        ride_min: 10

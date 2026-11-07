@@ -1,0 +1,55 @@
+id,address,type,hours_mon,hours_tue,hours_wed,hours_thu,hours_fri,hours_sat,hours_sun,max_weight_kg,source_url,checked_date,lat,lon,geocode_status,osm_name,district,note
+OSM-node4107390589,"Профсоюзная улица, 45",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/4107390589,,55.6672455,37.5527015,from_osm,СДЭК,Академический,draft from OSM — verify hours/weight on cdek.ru
+OSM-node4611431884,"Профсоюзная улица, 45",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/4611431884,,55.6667149,37.5521026,from_osm,СДЭК,Академический,draft from OSM — verify hours/weight on cdek.ru
+OSM-node4611456384,"улица Вавилова, 17А",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/4611456384,,55.7025576,37.5811880,from_osm,СДЭК,Донской,draft from OSM — verify hours/weight on cdek.ru
+OSM-node4611473952,"улица Дмитрия Ульянова, 36",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/4611473952,,55.6829900,37.5859871,from_osm,СДЭК,Гагаринский,draft from OSM — verify hours/weight on cdek.ru
+OSM-node5663743864,"55.74206, 37.62735",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/5663743864,,55.7420631,37.6273492,from_osm,СДЭК,Якиманка,draft from OSM — verify hours/weight on cdek.ru
+OSM-node5986154985,"55.74206, 37.53568",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/5986154985,,55.7420614,37.5356756,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node6703292063,"55.70820, 37.61571",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/6703292063,,55.7082038,37.6157069,from_osm,СДЭК,Донской,draft from OSM — verify hours/weight on cdek.ru
+OSM-node6806548487,"55.72793, 37.61410",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/6806548487,,55.7279295,37.6141043,from_osm,СДЭК,Якиманка,draft from OSM — verify hours/weight on cdek.ru
+OSM-node7228749861,"55.68028, 37.55698",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/7228749861,,55.6802778,37.5569773,from_osm,СДЭК,Гагаринский,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8403186931,"улица Дмитрия Ульянова, 17 к1",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8403186931,,55.6889770,37.5713169,from_osm,СДЭК,Гагаринский,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8635344040,"55.67689, 37.57807",постамат,,,,,,,,,https://www.openstreetmap.org/node/8635344040,,55.6768917,37.5780728,from_osm,ОмниСДЭК,Академический,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938928499,"55.67884, 37.60348",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938928499,,55.6788411,37.6034760,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938928710,"55.67518, 37.54164",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938928710,,55.6751797,37.5416431,from_osm,СДЭК,Академический,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938928865,"55.69940, 37.55295",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938928865,,55.6993986,37.5529486,from_osm,СДЭК,Гагаринский,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938929027,"55.74121, 37.58892",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938929027,,55.7412060,37.5889160,from_osm,СДЭК,Хамовники,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938929411,"55.75092, 37.58983",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938929411,,55.7509225,37.5898290,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938929462,"55.71787, 37.64658",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938929462,,55.7178742,37.6465791,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938929570,"55.72297, 37.56916",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938929570,,55.7229680,37.5691590,from_osm,СДЭК,Хамовники,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938929597,"55.67417, 37.59416",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938929597,,55.6741723,37.5941634,from_osm,СДЭК,Академический,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938929653,"55.68278, 37.65259",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938929653,,55.6827849,37.6525901,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938929927,"55.70711, 37.65458",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938929927,,55.7071142,37.6545802,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938929999,"55.68742, 37.62190",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938929999,,55.6874226,37.6219029,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938930297,"55.74952, 37.53716",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938930297,,55.7495247,37.5371638,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node8938930508,"55.66521, 37.61378",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/8938930508,,55.6652077,37.6137754,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node9714366904,"55.71013, 37.62058",постамат,,,,,,,,,https://www.openstreetmap.org/node/9714366904,,55.7101310,37.6205846,from_osm,CDEK,Донской,draft from OSM — verify hours/weight on cdek.ru
+OSM-node9991110222,"55.74863, 37.54222",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/9991110222,,55.7486265,37.5422171,from_osm,СДЭК,Хамовники,draft from OSM — verify hours/weight on cdek.ru
+OSM-node9991110224,"55.73236, 37.58393",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/9991110224,,55.7323597,37.5839266,from_osm,СДЭК,Хамовники,draft from OSM — verify hours/weight on cdek.ru
+OSM-node9991110239,"55.73545, 37.61505",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/9991110239,,55.7354499,37.6150498,from_osm,СДЭК,Якиманка,draft from OSM — verify hours/weight on cdek.ru
+OSM-node10168949703,"55.68833, 37.54377",постамат,,,,,,,,,https://www.openstreetmap.org/node/10168949703,,55.6883278,37.5437654,from_osm,ОмниСДЭК,Гагаринский,draft from OSM — verify hours/weight on cdek.ru
+OSM-node10697410843,"55.72111, 37.60936",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/10697410843,,55.7211104,37.6093628,from_osm,СДЭК,Якиманка,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11067151269,"55.68046, 37.53540",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/11067151269,,55.6804573,37.5354015,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11067171807,"55.72861, 37.64775",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/11067171807,,55.7286146,37.6477540,from_osm,СДЭК,Якиманка,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11266899925,"55.73963, 37.54784",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/11266899925,,55.7396251,37.5478351,from_osm,СДЭК,Хамовники,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11288676318,"55.74000, 37.54740",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/11288676318,,55.7399964,37.5474050,from_osm,СДЭК,Хамовники,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11288676338,"55.68001, 37.63905",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/11288676338,,55.6800097,37.6390464,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11288699277,"55.70308, 37.64785",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/11288699277,,55.7030793,37.6478494,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11368246281,"55.67127, 37.55396",постамат,,,,,,,,,https://www.openstreetmap.org/node/11368246281,,55.6712733,37.5539625,from_osm,СДЭК,Академический,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11368246408,"55.69179, 37.56347",постамат,,,,,,,,,https://www.openstreetmap.org/node/11368246408,,55.6917914,37.5634652,from_osm,СДЭК,Гагаринский,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11505547650,"55.67169, 37.56949",постамат,,,,,,,,,https://www.openstreetmap.org/node/11505547650,,55.6716912,37.5694892,from_osm,СДЭК,Академический,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11649058899,"55.69136, 37.60013",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/11649058899,,55.6913567,37.6001281,from_osm,СДЭК,Донской,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11726732824,"55.67148, 37.57651",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/11726732824,,55.6714788,37.5765074,from_osm,СДЭК,Академический,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11824449842,"55.72220, 37.63058",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/11824449842,,55.7221984,37.6305841,from_osm,СДЭК,Якиманка,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11909657443,"55.72882, 37.58021",постамат,,,,,,,,,https://www.openstreetmap.org/node/11909657443,,55.7288247,37.5802122,from_osm,СДЭК,Хамовники,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11958117904,"55.67110, 37.61088",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/11958117904,,55.6710954,37.6108822,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node11958117932,"55.72056, 37.61795",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/11958117932,,55.7205611,37.6179509,from_osm,СДЭК,Якиманка,draft from OSM — verify hours/weight on cdek.ru
+OSM-node12011953494,"55.70944, 37.59795",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/12011953494,,55.7094351,37.5979518,from_osm,СДЭК,Донской,draft from OSM — verify hours/weight on cdek.ru
+OSM-node12059175402,"55.67007, 37.55176",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/12059175402,,55.6700679,37.5517566,from_osm,СДЭК,Академический,draft from OSM — verify hours/weight on cdek.ru
+OSM-node12059175453,"55.73256, 37.62911",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/12059175453,,55.7325565,37.6291118,from_osm,СДЭК,Якиманка,draft from OSM — verify hours/weight on cdek.ru
+OSM-node12183583895,"55.74968, 37.53853",постамат,,,,,,,,,https://www.openstreetmap.org/node/12183583895,,55.7496781,37.5385312,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node12298914976,"55.74833, 37.54278",постамат,,,,,,,,,https://www.openstreetmap.org/node/12298914976,,55.7483275,37.5427787,from_osm,СДЭК,Хамовники,draft from OSM — verify hours/weight on cdek.ru
+OSM-node12411441291,"55.71137, 37.64450",постамат,,,,,,,,,https://www.openstreetmap.org/node/12411441291,,55.7113747,37.6445047,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node13274337194,"55.73713, 37.63559",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/13274337194,,55.7371338,37.6355890,from_osm,СДЭК,Якиманка,draft from OSM — verify hours/weight on cdek.ru
+OSM-node13375837551,"55.70964, 37.65726",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/13375837551,,55.7096401,37.6572647,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru
+OSM-node13478736902,"Даниловская набережная, 2 к4",ПВЗ,,,,,,,,,https://www.openstreetmap.org/node/13478736902,,55.7080989,37.6423059,from_osm,СДЭК,другое / граница,draft from OSM — verify hours/weight on cdek.ru

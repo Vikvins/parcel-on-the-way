@@ -1,0 +1,4 @@
+method,method_ru,n_users,usable_share,n_common_all_methods_usable,mean_extra_min_common,median_extra_min_common,mean_extra_min_finite,median_extra_min_finite,share_within_5min,mean_days_to_pickup,median_days_to_pickup,share_days_le_1,share_days_le_7,mean_days_on_way,share_on_way_le_1,share_on_way_le_7
+baseline_straight,baseline: ближайший к дому по прямой,200,1.0,200,11.223482694850688,9.004483458096782,11.223482694850688,9.004483458096782,0.335,0.0,0.0,1.0,1.0,0.0,0.33,0.33
+baseline_network,baseline: ближайший к дому по сети,200,1.0,200,10.613565752941962,9.004483458096782,10.613565752941962,9.004483458096782,0.33,0.0,0.0,1.0,1.0,0.0,0.325,0.325
+ours,наш метод: min cost,200,1.0,200,3.534724496316694,1.7676591699108073,3.534724496316694,1.7676591699108073,0.73,0.0,0.0,1.0,1.0,0.0,0.725,0.725

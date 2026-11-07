@@ -1,0 +1,25 @@
+point_id,leg,t_a_to_p,t_p_to_b,t_a_to_b,detour,arrival,open,open_reason,weight_ok,weight_reason,on_path,commute_id,weekday,departure
+PVZ-TEST-01,home→tram_60letiya,6.02703802394775,0.31341043134926144,6.340448455297011,0.0,08:36,False,arrive 08:36 before open 10:00 (no waiting),True,2≤15 kg,True,morning_tram_metro,wed,08:30
+PVZ-TEST-06,oktyabrskaya_exit→misis,1.8324783470767767,3.879273846825938,5.082379703112173,0.6293724907905416,08:58,False,arrive 08:58 before open 10:00 (no waiting),True,2≤31 kg,False,morning_tram_metro,wed,08:30
+PVZ-TEST-07,oktyabrskaya_exit→misis,4.68367777045889,1.5754054436597937,5.082379703112173,1.1767035110065107,09:01,True,open 09:00-18:00,True,2≤15 kg,False,morning_tram_metro,wed,08:30
+PVZ-TEST-03,home→tram_60letiya,7.003716970256918,0.6632685149599068,6.340448455297011,1.3265370299198143,08:37,False,arrive 08:37 before open 10:00 (no waiting),True,2≤20 kg,False,morning_tram_metro,wed,08:30
+POSTAMAT-TEST-08,oktyabrskaya_exit→misis,6.380190176774872,3.271917849975776,5.082379703112173,4.569728323638475,09:03,True,open 00:00-23:59,True,2≤20 kg,False,morning_tram_metro,wed,08:30
+PVZ-TEST-02,home→tram_60letiya,7.3757932260600665,6.203868947509251,6.340448455297011,7.239213718272307,08:37,False,arrive 08:37 before open 09:00 (no waiting),True,2≤10 kg,False,morning_tram_metro,wed,08:30
+PVZ-TEST-05,home→tram_60letiya,10.700518427072236,6.236818578235567,6.340448455297011,10.596888550010792,08:41,False,arrive 08:41 before open 10:00 (no waiting),True,2≤15 kg,False,morning_tram_metro,wed,08:30
+POSTAMAT-TEST-04,home→tram_60letiya,13.247559923822031,6.907111468525021,6.340448455297011,13.81422293705004,08:43,True,open 08:00-22:00,True,2≤25 kg,False,morning_tram_metro,wed,08:30
+PVZ-TEST-10,oktyabrskaya_exit→misis,10.39739300721789,12.524911092168713,5.082379703112173,17.839924396274426,09:07,False,arrive 09:07 before open 10:00 (no waiting),True,2≤5 kg,False,morning_tram_metro,wed,08:30
+PVZ-TEST-09,home→tram_60letiya,13.540171016026493,18.845650206184768,6.340448455297011,26.04537276691425,08:44,False,arrive 08:44 before open 10:00 (no waiting),True,2≤15 kg,False,morning_tram_metro,wed,08:30
+PVZ-TEST-11,home→tram_60letiya,20.011862098695683,25.317341288853957,6.340448455297011,38.98875493225263,08:50,False,arrive 08:50 before open 10:00 (no waiting),True,2≤15 kg,False,morning_tram_metro,wed,08:30
+PVZ-TEST-12,home→tram_60letiya,23.795275591580893,29.10075478173917,6.340448455297011,46.55558191802305,08:54,False,arrive 08:54 before open 10:00 (no waiting),True,2≤10 kg,False,morning_tram_metro,wed,08:30
+PVZ-TEST-01,metro_leninsky_south→home,8.25269836155053,6.02703802394775,14.279736385498282,0.0,18:53,True,open 10:00-21:00,True,2≤15 kg,True,evening_metro_only,wed,18:30
+PVZ-TEST-03,metro_leninsky_south→home,7.352459815177682,7.003716970256918,14.279736385498282,0.07644039993631857,18:52,True,open 10:00-20:00,True,2≤20 kg,False,evening_metro_only,wed,18:30
+POSTAMAT-TEST-04,metro_leninsky_south→home,1.2337561418878085,13.247559923822031,14.279736385498282,0.20157968021155703,18:46,True,open 08:00-22:00,True,2≤25 kg,False,evening_metro_only,wed,18:30
+PVZ-TEST-06,misis→oktyabrskaya_exit,3.879273846825938,1.8324783470767767,5.0823797031121725,0.6293724907905425,18:34,True,open 10:00-22:00,True,2≤31 kg,False,evening_metro_only,wed,18:30
+PVZ-TEST-07,misis→oktyabrskaya_exit,1.5754054436597937,4.68367777045889,5.0823797031121725,1.1767035110065116,18:32,False,leave 18:36 after close 18:00,True,2≤15 kg,False,evening_metro_only,wed,18:30
+POSTAMAT-TEST-08,misis→oktyabrskaya_exit,3.271917849975776,6.380190176774872,5.0823797031121725,4.569728323638476,18:33,True,open 00:00-23:59,True,2≤20 kg,False,evening_metro_only,wed,18:30
+PVZ-TEST-02,metro_leninsky_south→home,14.032102279447578,7.3757932260600665,14.279736385498282,7.128159120009364,18:59,True,open 09:00-21:00,True,2≤10 kg,False,evening_metro_only,wed,18:30
+PVZ-TEST-05,metro_leninsky_south→home,11.158133636985868,10.700518427072236,14.279736385498282,7.578915678559824,18:56,True,open 10:00-19:00,True,2≤15 kg,False,evening_metro_only,wed,18:30
+PVZ-TEST-10,misis→oktyabrskaya_exit,12.524911092168713,10.39739300721789,5.0823797031121725,17.839924396274426,18:43,False,leave 18:47 after close 17:00,True,2≤5 kg,False,evening_metro_only,wed,18:30
+PVZ-TEST-09,metro_leninsky_south→home,26.78493813638603,13.540171016026493,14.279736385498282,26.04537276691424,19:12,True,open 10:00-21:00,True,2≤15 kg,False,evening_metro_only,wed,18:30
+PVZ-TEST-11,,inf,inf,5.0823797031121725,inf,,False,unreachable within walking cutoff,False,,False,evening_metro_only,wed,18:30
+PVZ-TEST-12,,inf,inf,5.0823797031121725,inf,,False,unreachable within walking cutoff,False,,False,evening_metro_only,wed,18:30

@@ -1,0 +1,601 @@
+user_id,method,point_id,point_name,arrival_weekday,parcel_weight_kg,delay_days,within_1_day,within_storage,first_opportunity_weekday,delay_days_separate_trip,home_walk_min,detour_min
+U000,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,10.0,,False,False,,0,20.46,0.0
+U000,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,10.0,,False,False,,0,20.46,0.0
+U000,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,10.0,0,True,True,mon,0,28.07,2.48
+U001,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,2.0,,False,False,,0,16.4,0.0
+U001,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,2.0,,False,False,,0,16.4,0.0
+U001,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,mon,2.0,0,True,True,mon,0,33.12,2.31
+U002,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,10.0,0,True,True,fri,0,24.72,3.29
+U002,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,10.0,0,True,True,fri,0,24.72,3.29
+U002,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,fri,10.0,0,True,True,fri,0,61.06,2.31
+U003,baseline_home_straight,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),mon,0.5,0,True,True,mon,0,11.95,13.01
+U003,baseline_home_walk,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),mon,0.5,0,True,True,mon,0,11.95,13.01
+U003,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,0.5,0,True,True,mon,0,66.25,2.48
+U004,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,2.0,0,True,True,tue,0,26.77,2.31
+U004,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,2.0,0,True,True,tue,0,26.77,2.31
+U004,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,2.0,0,True,True,tue,0,26.77,2.31
+U005,baseline_home_straight,PVZ-TEST-02,Тест ПВЗ «Бардина»,fri,1.0,0,True,True,fri,0,11.71,7.24
+U005,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,fri,1.0,0,True,True,fri,0,8.24,16.42
+U005,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,1.0,0,True,True,fri,0,10.36,0.0
+U006,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,1.0,0,True,True,mon,0,7.71,0.0
+U006,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,1.0,0,True,True,mon,0,7.71,0.0
+U006,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,1.0,0,True,True,mon,0,7.71,0.0
+U007,baseline_home_straight,PVZ-TEST-02,Тест ПВЗ «Бардина»,fri,0.5,0,True,True,fri,0,19.35,0.75
+U007,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,fri,0.5,0,True,True,fri,0,17.95,11.99
+U007,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,0.5,0,True,True,fri,0,60.09,0.0
+U008,baseline_home_straight,PVZ-TEST-02,Тест ПВЗ «Бардина»,tue,0.5,0,True,True,tue,0,22.25,1.22
+U008,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,tue,0.5,0,True,True,tue,0,20.74,12.35
+U008,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,0.5,0,True,True,tue,0,62.42,0.0
+U009,baseline_home_straight,PVZ-TEST-07,Тест ПВЗ «Ленинский / МИСИС»,mon,10.0,0,True,True,mon,0,8.05,5.56
+U009,baseline_home_walk,PVZ-TEST-07,Тест ПВЗ «Ленинский / МИСИС»,mon,10.0,0,True,True,mon,0,8.05,5.56
+U009,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,10.0,0,True,True,mon,0,11.53,2.94
+U010,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,1.0,0,True,True,mon,0,28.39,2.48
+U010,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,1.0,0,True,True,mon,0,28.39,2.48
+U010,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,mon,1.0,0,True,True,mon,0,60.53,2.31
+U011,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,5.0,0,True,True,fri,0,27.64,2.48
+U011,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,5.0,0,True,True,fri,0,27.64,2.48
+U011,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,fri,5.0,0,True,True,fri,0,59.78,1.02
+U012,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,2.0,,False,False,,0,22.19,0.0
+U012,baseline_home_walk,PVZ-TEST-07,Тест ПВЗ «Ленинский / МИСИС»,mon,2.0,0,True,True,mon,0,19.88,8.38
+U012,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,2.0,0,True,True,mon,0,23.36,3.4
+U013,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,2.0,0,True,True,fri,0,17.56,2.94
+U013,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,2.0,0,True,True,fri,0,17.56,2.94
+U013,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,2.0,0,True,True,fri,0,17.56,2.94
+U014,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,2.0,0,True,True,wed,0,21.18,4.89
+U014,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,2.0,0,True,True,wed,0,21.18,4.89
+U014,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,2.0,0,True,True,wed,0,26.64,0.0
+U015,baseline_home_straight,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),thu,0.5,0,True,True,thu,0,4.04,0.91
+U015,baseline_home_walk,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),thu,0.5,0,True,True,thu,0,4.04,0.91
+U015,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,0.5,0,True,True,thu,0,28.13,0.0
+U016,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,fri,10.0,0,True,True,fri,0,3.03,4.57
+U016,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,fri,10.0,0,True,True,fri,0,3.03,4.57
+U016,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,10.0,0,True,True,fri,0,5.02,0.63
+U017,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,mon,10.0,0,True,True,mon,0,21.03,12.15
+U017,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,10.0,0,True,True,mon,0,15.9,2.48
+U017,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,10.0,0,True,True,mon,0,53.35,0.0
+U018,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,fri,5.0,0,True,True,fri,0,34.16,20.32
+U018,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,5.0,0,True,True,fri,0,29.03,2.48
+U018,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,5.0,0,True,True,fri,0,38.35,0.0
+U019,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,2.0,0,True,True,tue,0,18.22,10.17
+U019,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,2.0,0,True,True,tue,0,16.89,7.75
+U019,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,2.0,0,True,True,tue,0,55.01,0.63
+U020,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,fri,0.5,,False,False,,0,30.56,
+U020,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,fri,0.5,,False,False,,0,30.56,
+U020,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,0.5,0,True,True,fri,0,38.18,2.48
+U021,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,fri,10.0,0,True,True,fri,0,19.94,1.42
+U021,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,fri,10.0,0,True,True,fri,0,19.94,1.42
+U021,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,10.0,0,True,True,fri,0,25.07,0.63
+U022,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,1.0,,False,False,,0,7.59,0.0
+U022,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,1.0,,False,False,,0,7.59,0.0
+U022,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,1.0,0,True,True,thu,0,33.83,0.0
+U023,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,18.54,3.29
+U023,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,18.54,3.29
+U023,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,18.54,3.29
+U024,baseline_home_straight,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),fri,1.0,0,True,True,fri,0,5.55,4.48
+U024,baseline_home_walk,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),fri,1.0,0,True,True,fri,0,5.55,4.48
+U024,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,1.0,0,True,True,fri,0,26.08,0.0
+U025,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,5.0,,False,False,,0,18.41,0.0
+U025,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,5.0,,False,False,,0,18.41,0.0
+U025,ours,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,5.0,0,True,True,mon,0,42.42,0.02
+U026,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,23.68,0.87
+U026,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,23.68,0.87
+U026,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,23.68,0.87
+U027,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,mon,5.0,0,True,True,mon,0,29.0,2.31
+U027,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,mon,5.0,0,True,True,mon,0,29.0,2.31
+U027,ours,PVZ-TEST-09,Тест ПВЗ «Академическая»,mon,5.0,0,True,True,mon,0,52.84,0.5
+U028,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,thu,5.0,0,True,True,thu,0,10.65,10.59
+U028,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,thu,5.0,0,True,True,thu,0,10.65,10.59
+U028,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,5.0,0,True,True,thu,0,18.59,0.0
+U029,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,fri,1.0,0,True,True,fri,0,32.57,22.82
+U029,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,1.0,0,True,True,fri,0,27.44,2.48
+U029,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,1.0,0,True,True,fri,0,36.75,0.0
+U030,baseline_home_straight,PVZ-TEST-12,Тест ПВЗ «Дом 36» (Дм. Ульянова 36),tue,10.0,0,True,True,tue,0,10.24,11.3
+U030,baseline_home_walk,PVZ-TEST-12,Тест ПВЗ «Дом 36» (Дм. Ульянова 36),tue,10.0,0,True,True,tue,0,10.24,11.3
+U030,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,10.0,0,True,True,tue,0,27.73,0.0
+U031,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,2.0,,False,False,,0,17.34,0.0
+U031,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,2.0,,False,False,,0,17.34,0.0
+U031,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,2.0,0,True,True,wed,0,24.48,0.63
+U032,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,5.0,0,True,True,tue,0,27.62,9.16
+U032,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,5.0,0,True,True,tue,0,26.39,6.83
+U032,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,5.0,0,True,True,tue,0,62.43,0.29
+U033,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,0.5,0,True,True,thu,0,15.27,1.02
+U033,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,0.5,0,True,True,thu,0,15.27,1.02
+U033,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,0.5,0,True,True,thu,0,15.27,1.02
+U034,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,10.0,0,True,True,wed,0,26.02,2.48
+U034,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,10.0,0,True,True,wed,0,26.02,2.48
+U034,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,10.0,0,True,True,wed,0,26.02,2.48
+U035,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,tue,1.0,0,True,True,tue,0,27.14,12.15
+U035,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,1.0,0,True,True,tue,0,22.01,2.48
+U035,ours,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,1.0,0,True,True,tue,0,55.41,0.42
+U036,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,0.5,,False,False,,0,7.08,0.0
+U036,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,0.5,,False,False,,0,7.08,0.0
+U036,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,0.5,0,True,True,fri,0,14.43,2.48
+U037,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,tue,2.0,0,True,True,tue,0,30.7,10.02
+U037,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,2.0,0,True,True,tue,0,25.57,2.37
+U037,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,2.0,0,True,True,tue,0,25.57,2.37
+U038,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,0.5,0,True,True,thu,0,9.92,0.87
+U038,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,0.5,0,True,True,thu,0,9.92,0.87
+U038,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,0.5,0,True,True,thu,0,9.92,0.87
+U039,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,wed,0.5,0,True,True,wed,0,27.05,12.15
+U039,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,21.92,2.48
+U039,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,0.5,0,True,True,wed,0,50.16,0.63
+U040,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,thu,5.0,0,True,True,thu,0,5.86,10.42
+U040,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,thu,5.0,0,True,True,thu,0,5.86,10.42
+U040,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,5.0,0,True,True,thu,0,13.97,0.0
+U041,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,1.0,0,True,True,wed,0,15.43,0.0
+U041,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,1.0,0,True,True,wed,0,15.43,0.0
+U041,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,1.0,0,True,True,wed,0,15.43,0.0
+U042,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,10.0,,False,False,,0,15.21,0.0
+U042,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,10.0,,False,False,,0,15.21,0.0
+U042,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,mon,10.0,0,True,True,mon,0,22.73,2.31
+U043,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,1.0,0,True,True,thu,0,24.84,2.94
+U043,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,1.0,0,True,True,thu,0,24.84,2.94
+U043,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,1.0,0,True,True,thu,0,30.39,0.0
+U044,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,5.0,,False,False,,0,14.34,0.0
+U044,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,5.0,,False,False,,0,14.34,0.0
+U044,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,5.0,0,True,True,wed,0,37.82,2.31
+U045,baseline_home_straight,PVZ-TEST-02,Тест ПВЗ «Бардина»,thu,2.0,0,True,True,thu,0,1.55,2.54
+U045,baseline_home_walk,PVZ-TEST-02,Тест ПВЗ «Бардина»,thu,2.0,0,True,True,thu,0,1.55,2.54
+U045,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,2.0,0,True,True,thu,0,45.46,0.0
+U046,baseline_home_straight,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),tue,5.0,0,True,True,tue,0,13.41,10.42
+U046,baseline_home_walk,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),tue,5.0,0,True,True,tue,0,13.41,10.42
+U046,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,5.0,0,True,True,tue,0,28.0,0.0
+U047,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,2.0,0,True,True,thu,0,10.25,0.0
+U047,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,2.0,0,True,True,thu,0,10.25,0.0
+U047,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,2.0,0,True,True,thu,0,30.77,0.0
+U048,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,2.0,0,True,True,mon,0,26.53,0.0
+U048,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,2.0,0,True,True,mon,0,26.53,0.0
+U048,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,2.0,0,True,True,mon,0,26.53,0.0
+U049,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,22.77,0.87
+U049,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,22.77,0.87
+U049,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,22.77,0.87
+U050,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,wed,1.0,0,True,True,wed,0,4.31,1.42
+U050,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,wed,1.0,0,True,True,wed,0,4.31,1.42
+U050,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,1.0,0,True,True,wed,0,9.44,0.63
+U051,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,wed,0.5,,False,False,,0,31.2,
+U051,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,26.08,2.48
+U051,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,0.5,0,True,True,wed,0,57.07,0.0
+U052,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,mon,5.0,0,True,True,mon,0,35.01,12.25
+U052,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,5.0,0,True,True,mon,0,29.88,2.48
+U052,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,5.0,0,True,True,mon,0,29.88,2.48
+U053,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,fri,10.0,0,True,True,fri,0,2.61,4.5
+U053,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,fri,10.0,0,True,True,fri,0,2.61,4.5
+U053,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,10.0,0,True,True,fri,0,4.66,0.63
+U054,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,12.74,7.75
+U054,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,12.74,7.75
+U054,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,0.5,0,True,True,wed,0,52.96,0.0
+U055,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,2.0,,False,False,,0,2.51,0.0
+U055,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,2.0,,False,False,,0,2.51,0.0
+U055,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,fri,2.0,0,True,True,fri,0,33.04,2.31
+U056,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,10.0,,False,False,,0,21.85,0.0
+U056,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,10.0,,False,False,,0,21.85,0.0
+U056,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,10.0,0,True,True,tue,0,32.18,0.0
+U057,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,thu,5.0,0,True,True,thu,0,32.27,12.2
+U057,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,27.14,2.48
+U057,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,27.14,2.48
+U058,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,10.0,,False,False,,0,33.78,
+U058,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,10.0,0,True,True,tue,0,29.47,2.31
+U058,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,10.0,0,True,True,tue,0,29.47,2.31
+U059,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,2.0,0,True,True,wed,0,3.34,1.85
+U059,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,2.0,0,True,True,wed,0,3.34,1.85
+U059,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,2.0,0,True,True,wed,0,10.46,0.0
+U060,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,5.0,0,True,True,thu,0,17.72,10.67
+U060,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,15.9,3.4
+U060,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,15.9,3.4
+U061,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,mon,1.0,0,True,True,mon,0,17.53,1.02
+U061,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,mon,1.0,0,True,True,mon,0,17.53,1.02
+U061,ours,PVZ-TEST-02,Тест ПВЗ «Бардина»,mon,1.0,0,True,True,mon,0,29.74,0.38
+U062,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,10.0,0,True,True,tue,0,25.65,2.94
+U062,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,10.0,0,True,True,tue,0,25.65,2.94
+U062,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,10.0,0,True,True,tue,0,25.65,2.94
+U063,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,1.0,0,True,True,thu,0,13.31,1.02
+U063,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,1.0,0,True,True,thu,0,13.31,1.02
+U063,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,1.0,0,True,True,thu,0,19.59,0.0
+U064,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,14.35,3.4
+U064,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,14.35,3.4
+U064,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,5.0,0,True,True,thu,0,51.11,1.02
+U065,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,tue,2.0,0,True,True,tue,0,23.94,4.75
+U065,baseline_home_walk,PVZ-TEST-07,Тест ПВЗ «Ленинский / МИСИС»,tue,2.0,0,True,True,tue,0,22.64,1.76
+U065,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,2.0,0,True,True,tue,0,24.31,0.58
+U066,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,2.0,0,True,True,fri,0,25.05,0.0
+U066,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,2.0,0,True,True,fri,0,25.05,0.0
+U066,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,2.0,0,True,True,fri,0,25.05,0.0
+U067,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,5.0,0,True,True,mon,0,14.62,0.0
+U067,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,5.0,0,True,True,mon,0,14.62,0.0
+U067,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,5.0,0,True,True,mon,0,14.62,0.0
+U068,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,wed,2.0,0,True,True,wed,0,31.56,18.27
+U068,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,2.0,0,True,True,wed,0,26.44,2.48
+U068,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,2.0,0,True,True,wed,0,26.44,2.48
+U069,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,24.16,2.9
+U069,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,24.16,2.9
+U069,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,24.16,2.9
+U070,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,2.0,0,True,True,tue,0,19.64,2.31
+U070,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,2.0,0,True,True,tue,0,19.64,2.31
+U070,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,2.0,0,True,True,tue,0,19.64,2.31
+U071,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,mon,5.0,0,True,True,mon,0,22.48,0.98
+U071,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,mon,5.0,0,True,True,mon,0,22.48,0.98
+U071,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,5.0,0,True,True,mon,0,47.41,0.0
+U072,baseline_home_straight,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),wed,1.0,0,True,True,wed,0,17.15,16.12
+U072,baseline_home_walk,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),wed,1.0,0,True,True,wed,0,17.15,16.12
+U072,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,1.0,0,True,True,wed,0,26.03,0.0
+U073,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,2.0,0,True,True,thu,0,28.09,2.48
+U073,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,2.0,0,True,True,thu,0,28.09,2.48
+U073,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,2.0,0,True,True,thu,0,65.53,0.0
+U074,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,2.0,,False,False,,0,8.23,0.0
+U074,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,2.0,,False,False,,0,8.23,0.0
+U074,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,2.0,0,True,True,wed,0,12.0,0.58
+U075,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,0.5,0,True,True,tue,0,2.99,0.87
+U075,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,0.5,0,True,True,tue,0,2.99,0.87
+U075,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,0.5,0,True,True,tue,0,2.99,0.87
+U076,baseline_home_straight,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),fri,0.5,0,True,True,fri,0,9.88,6.87
+U076,baseline_home_walk,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),fri,0.5,0,True,True,fri,0,9.88,6.87
+U076,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,0.5,0,True,True,fri,0,28.02,0.0
+U077,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,5.0,0,True,True,tue,0,16.8,2.31
+U077,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,5.0,0,True,True,tue,0,16.8,2.31
+U077,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,5.0,0,True,True,tue,0,16.8,2.31
+U078,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,5.0,,False,False,,0,26.62,0.0
+U078,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,5.0,,False,False,,0,26.62,0.0
+U078,ours,PVZ-TEST-03,Тест ПВЗ «Вавилова»,mon,5.0,0,True,True,mon,0,42.0,0.26
+U079,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,5.0,0,True,True,thu,0,11.42,0.98
+U079,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,5.0,0,True,True,thu,0,11.42,0.98
+U079,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,5.0,0,True,True,thu,0,37.35,0.0
+U080,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,0.5,,False,False,,0,19.72,1.42
+U080,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,0.5,,False,False,,0,19.72,1.42
+U080,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,0.5,0,True,True,tue,0,24.85,0.63
+U081,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,fri,1.0,,False,False,,0,32.1,
+U081,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,1.0,0,True,True,fri,0,26.97,2.48
+U081,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,1.0,0,True,True,fri,0,55.63,0.05
+U082,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,fri,0.5,0,True,True,fri,0,26.24,12.15
+U082,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,0.5,0,True,True,fri,0,21.11,2.48
+U082,ours,PVZ-TEST-02,Тест ПВЗ «Бардина»,fri,0.5,0,True,True,fri,0,51.98,0.38
+U083,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,5.0,,False,False,,0,4.01,0.0
+U083,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,5.0,,False,False,,0,4.01,0.0
+U083,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,5.0,0,True,True,mon,0,10.46,2.94
+U084,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,10.0,,False,False,,0,26.0,0.0
+U084,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,10.0,,False,False,,0,26.0,0.0
+U084,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,fri,10.0,0,True,True,fri,0,51.76,2.31
+U085,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,1.0,0,True,True,thu,0,18.78,2.94
+U085,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,1.0,0,True,True,thu,0,18.78,2.94
+U085,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,1.0,0,True,True,thu,0,55.12,2.31
+U086,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,fri,5.0,,False,False,,0,5.67,0.53
+U086,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,fri,5.0,,False,False,,0,5.67,0.53
+U086,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,5.0,0,True,True,fri,0,23.67,0.0
+U087,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,mon,0.5,0,True,True,mon,0,15.85,12.0
+U087,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,0.5,0,True,True,mon,0,10.87,2.48
+U087,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,mon,0.5,0,True,True,mon,0,46.11,1.02
+U088,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,1.0,0,True,True,fri,0,15.35,4.89
+U088,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,1.0,0,True,True,fri,0,15.35,4.89
+U088,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,fri,1.0,0,True,True,fri,0,51.69,1.02
+U089,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,0.5,0,True,True,thu,0,0.33,0.15
+U089,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,0.5,0,True,True,thu,0,0.33,0.15
+U089,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,0.5,0,True,True,thu,0,34.57,0.0
+U090,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,tue,1.0,0,True,True,tue,0,23.35,12.15
+U090,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,1.0,0,True,True,tue,0,18.22,2.48
+U090,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,1.0,0,True,True,tue,0,27.53,0.0
+U091,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,tue,5.0,0,True,True,tue,0,29.21,11.69
+U091,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,5.0,0,True,True,tue,0,24.08,2.48
+U091,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,5.0,0,True,True,tue,0,24.08,2.48
+U092,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,10.0,,False,False,,0,12.44,0.0
+U092,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,10.0,,False,False,,0,12.44,0.0
+U092,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,10.0,0,True,True,fri,0,16.77,7.75
+U093,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,1.0,0,True,True,thu,0,26.12,2.48
+U093,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,1.0,0,True,True,thu,0,26.12,2.48
+U093,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,1.0,0,True,True,thu,0,35.43,0.0
+U094,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,2.0,0,True,True,fri,0,22.32,5.55
+U094,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,2.0,0,True,True,fri,0,22.32,5.55
+U094,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,fri,2.0,0,True,True,fri,0,57.21,1.87
+U095,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,wed,5.0,0,True,True,wed,0,24.48,1.42
+U095,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,wed,5.0,0,True,True,wed,0,24.48,1.42
+U095,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,5.0,0,True,True,wed,0,29.6,0.63
+U096,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,10.0,,False,False,,0,19.93,0.0
+U096,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,10.0,,False,False,,0,19.93,0.0
+U096,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,10.0,0,True,True,thu,0,36.31,0.0
+U097,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,5.0,0,True,True,wed,0,15.68,1.86
+U097,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,5.0,0,True,True,wed,0,15.68,1.86
+U097,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,5.0,0,True,True,wed,0,15.68,1.86
+U098,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,1.0,0,True,True,thu,0,23.27,2.48
+U098,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,1.0,0,True,True,thu,0,23.27,2.48
+U098,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,1.0,0,True,True,thu,0,54.2,1.85
+U099,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,tue,5.0,0,True,True,tue,0,7.06,5.07
+U099,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,tue,5.0,0,True,True,tue,0,7.06,5.07
+U099,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,5.0,0,True,True,tue,0,20.53,0.0
+U100,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,1.0,,False,False,,0,28.25,0.0
+U100,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,1.0,,False,False,,0,28.25,0.0
+U100,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,1.0,0,True,True,mon,0,35.59,3.4
+U101,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,20.36,4.89
+U101,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,20.36,4.89
+U101,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,10.0,0,True,True,thu,0,56.7,0.87
+U102,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,1.0,,False,False,,0,15.64,0.0
+U102,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,1.0,,False,False,,0,15.64,0.0
+U102,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,1.0,0,True,True,wed,0,43.58,2.31
+U103,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,5.0,,False,False,,0,21.59,0.0
+U103,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,5.0,,False,False,,0,21.59,0.0
+U103,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,5.0,0,True,True,wed,0,29.54,3.29
+U104,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,wed,0.5,,False,False,,0,35.52,
+U104,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,30.39,4.55
+U104,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,30.39,4.55
+U105,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,2.0,0,True,True,wed,0,12.47,2.31
+U105,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,2.0,0,True,True,wed,0,12.47,2.31
+U105,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,2.0,0,True,True,wed,0,17.77,0.0
+U106,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,13.62,3.29
+U106,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,13.62,3.29
+U106,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,10.0,0,True,True,thu,0,49.96,1.85
+U107,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,fri,5.0,0,True,True,fri,0,16.98,1.02
+U107,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,fri,5.0,0,True,True,fri,0,16.98,1.02
+U107,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,5.0,0,True,True,fri,0,22.9,0.63
+U108,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,2.0,0,True,True,tue,0,15.76,4.89
+U108,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,2.0,0,True,True,tue,0,15.76,4.89
+U108,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,2.0,0,True,True,tue,0,57.85,0.0
+U109,baseline_home_straight,PVZ-TEST-02,Тест ПВЗ «Бардина»,mon,10.0,0,True,True,mon,0,11.44,0.93
+U109,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,10.0,,False,False,,0,10.89,0.42
+U109,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,10.0,0,True,True,mon,0,17.02,0.63
+U110,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,fri,10.0,0,True,True,fri,0,1.19,2.33
+U110,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,fri,10.0,0,True,True,fri,0,1.19,2.33
+U110,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,10.0,0,True,True,fri,0,5.41,0.63
+U111,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,1.0,0,True,True,tue,0,26.38,3.4
+U111,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,1.0,0,True,True,tue,0,26.38,3.4
+U111,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,1.0,0,True,True,tue,0,26.38,3.4
+U112,baseline_home_straight,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),fri,2.0,0,True,True,fri,0,12.09,8.66
+U112,baseline_home_walk,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),fri,2.0,0,True,True,fri,0,12.09,8.66
+U112,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,2.0,0,True,True,fri,0,28.43,0.0
+U113,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,2.0,0,True,True,thu,0,4.82,1.02
+U113,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,2.0,0,True,True,thu,0,4.82,1.02
+U113,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,2.0,0,True,True,thu,0,11.1,0.0
+U114,baseline_home_straight,PVZ-TEST-02,Тест ПВЗ «Бардина»,wed,5.0,0,True,True,wed,0,15.79,1.22
+U114,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,wed,5.0,0,True,True,wed,0,14.56,0.02
+U114,ours,PVZ-TEST-05,Тест ПВЗ «Зелинского»,wed,5.0,0,True,True,wed,0,14.56,0.02
+U115,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,1.0,0,True,True,fri,0,17.69,0.0
+U115,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,1.0,0,True,True,fri,0,17.69,0.0
+U115,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,1.0,0,True,True,fri,0,17.69,0.0
+U116,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,1.0,,False,False,,0,21.69,5.16
+U116,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,1.0,,False,False,,0,21.69,5.16
+U116,ours,PVZ-TEST-05,Тест ПВЗ «Зелинского»,fri,1.0,0,True,True,fri,0,60.78,0.02
+U117,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,10.0,0,True,True,wed,0,19.53,4.89
+U117,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,10.0,0,True,True,wed,0,19.53,4.89
+U117,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,10.0,0,True,True,wed,0,55.87,1.02
+U118,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,fri,10.0,0,True,True,fri,0,18.77,1.02
+U118,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,10.0,,False,False,,0,18.39,
+U118,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,10.0,0,True,True,fri,0,24.69,0.0
+U119,baseline_home_straight,PVZ-TEST-03,Тест ПВЗ «Вавилова»,tue,10.0,,False,False,,0,6.74,7.91
+U119,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,10.0,,False,False,,0,5.51,10.48
+U119,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,10.0,0,True,True,tue,0,6.27,1.33
+U120,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,10.0,,False,False,,0,10.32,0.0
+U120,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,10.0,,False,False,,0,10.32,0.0
+U120,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,10.0,0,True,True,fri,0,13.1,2.48
+U121,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,mon,5.0,0,True,True,mon,0,12.34,10.39
+U121,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,mon,5.0,0,True,True,mon,0,12.34,10.39
+U121,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,5.0,0,True,True,mon,0,20.48,0.0
+U122,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,fri,5.0,0,True,True,fri,0,24.07,11.04
+U122,baseline_home_walk,PVZ-TEST-07,Тест ПВЗ «Ленинский / МИСИС»,fri,5.0,,False,False,,0,22.77,8.44
+U122,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,5.0,0,True,True,fri,0,24.45,7.75
+U123,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,tue,5.0,0,True,True,tue,0,6.81,12.27
+U123,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,tue,5.0,0,True,True,tue,0,6.81,12.27
+U123,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,5.0,0,True,True,tue,0,13.07,0.0
+U124,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,2.0,0,True,True,mon,0,14.54,3.4
+U124,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,2.0,0,True,True,mon,0,14.54,3.4
+U124,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,2.0,0,True,True,mon,0,57.06,0.0
+U125,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,thu,2.0,0,True,True,thu,0,29.14,12.15
+U125,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,2.0,0,True,True,thu,0,24.01,2.48
+U125,ours,PVZ-TEST-02,Тест ПВЗ «Бардина»,thu,2.0,0,True,True,thu,0,60.13,0.38
+U126,baseline_home_straight,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),thu,1.0,0,True,True,thu,0,2.52,0.0
+U126,baseline_home_walk,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),thu,1.0,0,True,True,thu,0,2.52,0.0
+U126,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,1.0,0,True,True,thu,0,27.52,0.0
+U127,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,5.0,0,True,True,thu,0,25.5,2.31
+U127,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,5.0,0,True,True,thu,0,25.5,2.31
+U127,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,5.0,0,True,True,thu,0,25.5,2.31
+U128,baseline_home_straight,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),thu,1.0,0,True,True,thu,0,2.52,0.01
+U128,baseline_home_walk,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),thu,1.0,0,True,True,thu,0,2.52,0.01
+U128,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,1.0,0,True,True,thu,0,27.51,0.0
+U129,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,tue,1.0,0,True,True,tue,0,25.24,8.85
+U129,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,1.0,0,True,True,tue,0,23.41,2.48
+U129,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,1.0,0,True,True,tue,0,43.15,0.0
+U130,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,wed,2.0,0,True,True,wed,0,10.7,13.31
+U130,baseline_home_walk,PVZ-TEST-02,Тест ПВЗ «Бардина»,wed,2.0,0,True,True,wed,0,10.54,0.5
+U130,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,2.0,0,True,True,wed,0,15.92,0.0
+U131,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,tue,2.0,0,True,True,tue,0,17.81,11.08
+U131,baseline_home_walk,PVZ-TEST-07,Тест ПВЗ «Ленинский / МИСИС»,tue,2.0,0,True,True,tue,0,16.51,8.48
+U131,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,2.0,0,True,True,tue,0,18.97,0.0
+U132,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,tue,1.0,0,True,True,tue,0,5.88,11.76
+U132,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,tue,1.0,0,True,True,tue,0,5.88,11.76
+U132,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,1.0,0,True,True,tue,0,12.65,0.0
+U133,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,thu,10.0,0,True,True,thu,0,32.22,23.55
+U133,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,27.09,2.48
+U133,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,27.09,2.48
+U134,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,10.0,0,True,True,tue,0,23.23,4.79
+U134,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,10.0,0,True,True,tue,0,23.23,4.79
+U134,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,10.0,0,True,True,tue,0,59.57,2.31
+U135,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,0.5,0,True,True,wed,0,18.75,0.0
+U135,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,0.5,0,True,True,wed,0,18.75,0.0
+U135,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,0.5,0,True,True,wed,0,18.75,0.0
+U136,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,tue,0.5,0,True,True,tue,0,8.54,6.87
+U136,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,tue,0.5,0,True,True,tue,0,8.54,6.87
+U136,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,0.5,0,True,True,tue,0,20.2,0.0
+U137,baseline_home_straight,PVZ-TEST-02,Тест ПВЗ «Бардина»,mon,1.0,0,True,True,mon,0,20.8,1.68
+U137,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,1.0,0,True,True,mon,0,19.57,0.49
+U137,ours,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,1.0,0,True,True,mon,0,19.57,0.49
+U138,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,wed,5.0,0,True,True,wed,0,21.89,1.42
+U138,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,wed,5.0,0,True,True,wed,0,21.89,1.42
+U138,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,5.0,0,True,True,wed,0,27.02,0.63
+U139,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,10.0,0,True,True,mon,0,21.81,3.4
+U139,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,10.0,0,True,True,mon,0,21.81,3.4
+U139,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,10.0,0,True,True,mon,0,21.81,3.4
+U140,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,0.5,0,True,True,tue,0,26.24,2.48
+U140,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,0.5,0,True,True,tue,0,26.24,2.48
+U140,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,0.5,0,True,True,tue,0,58.25,2.31
+U141,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,thu,5.0,0,True,True,thu,0,9.51,0.53
+U141,baseline_home_walk,PVZ-TEST-12,Тест ПВЗ «Дом 36» (Дм. Ульянова 36),thu,5.0,0,True,True,thu,0,8.43,9.71
+U141,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,5.0,0,True,True,thu,0,27.51,0.0
+U142,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,0.5,,False,False,,0,0.07,0.0
+U142,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,thu,0.5,,False,False,,0,0.07,0.0
+U142,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,0.5,0,True,True,thu,0,40.22,0.0
+U143,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,1.0,0,True,True,mon,0,28.21,10.82
+U143,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,1.0,0,True,True,mon,0,28.21,10.82
+U143,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,mon,1.0,0,True,True,mon,0,29.63,2.31
+U144,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,10.0,0,True,True,wed,0,11.65,2.48
+U144,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,10.0,0,True,True,wed,0,11.65,2.48
+U144,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,10.0,0,True,True,wed,0,11.65,2.48
+U145,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,0.5,0,True,True,tue,0,20.17,3.4
+U145,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,0.5,0,True,True,tue,0,20.17,3.4
+U145,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,0.5,0,True,True,tue,0,20.17,3.4
+U146,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,fri,0.5,0,True,True,fri,0,3.19,2.29
+U146,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,fri,0.5,0,True,True,fri,0,3.19,2.29
+U146,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,0.5,0,True,True,fri,0,19.43,0.0
+U147,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,2.0,,False,False,,0,20.31,1.42
+U147,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,2.0,,False,False,,0,20.31,1.42
+U147,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,2.0,0,True,True,mon,0,25.44,0.63
+U148,baseline_home_straight,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),wed,5.0,0,True,True,wed,0,5.21,1.79
+U148,baseline_home_walk,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),wed,5.0,0,True,True,wed,0,5.21,1.79
+U148,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,5.0,0,True,True,wed,0,28.43,0.0
+U149,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,fri,10.0,,False,False,,0,34.12,
+U149,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,10.0,0,True,True,fri,0,28.99,2.48
+U149,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,10.0,0,True,True,fri,0,28.99,2.48
+U150,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,10.0,0,True,True,tue,0,24.0,3.4
+U150,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,10.0,0,True,True,tue,0,24.0,3.4
+U150,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,10.0,0,True,True,tue,0,60.9,1.85
+U151,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,0.5,0,True,True,thu,0,26.7,2.48
+U151,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,0.5,0,True,True,thu,0,26.7,2.48
+U151,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,0.5,0,True,True,thu,0,58.2,0.87
+U152,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,0.5,0,True,True,fri,0,21.12,0.0
+U152,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,0.5,0,True,True,fri,0,21.12,0.0
+U152,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,0.5,0,True,True,fri,0,21.12,0.0
+U153,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,5.0,0,True,True,wed,0,28.86,2.31
+U153,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,5.0,0,True,True,wed,0,28.86,2.31
+U153,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,5.0,0,True,True,wed,0,28.86,2.31
+U154,baseline_home_straight,PVZ-TEST-12,Тест ПВЗ «Дом 36» (Дм. Ульянова 36),tue,1.0,0,True,True,tue,0,4.26,8.49
+U154,baseline_home_walk,PVZ-TEST-12,Тест ПВЗ «Дом 36» (Дм. Ульянова 36),tue,1.0,0,True,True,tue,0,4.26,8.49
+U154,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,1.0,0,True,True,tue,0,24.56,0.0
+U155,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,10.0,,False,False,,0,26.47,0.0
+U155,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,10.0,,False,False,,0,26.47,0.0
+U155,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,10.0,0,True,True,wed,0,34.08,2.48
+U156,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,5.0,0,True,True,tue,0,26.33,3.29
+U156,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,5.0,0,True,True,tue,0,26.33,3.29
+U156,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,5.0,0,True,True,tue,0,68.42,0.63
+U157,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,wed,0.5,,False,False,,0,33.09,
+U157,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,27.96,2.48
+U157,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,0.5,0,True,True,wed,0,65.56,0.0
+U158,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,thu,10.0,,False,False,,0,32.81,
+U158,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,27.68,2.48
+U158,ours,PVZ-TEST-02,Тест ПВЗ «Бардина»,thu,10.0,0,True,True,thu,0,56.4,0.38
+U159,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,25.83,3.29
+U159,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,25.83,3.29
+U159,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,0.5,0,True,True,wed,0,25.83,3.29
+U160,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,2.0,0,True,True,mon,0,20.02,2.48
+U160,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,2.0,0,True,True,mon,0,20.02,2.48
+U160,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,2.0,0,True,True,mon,0,56.06,0.05
+U161,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,2.0,0,True,True,wed,0,28.76,2.31
+U161,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,wed,2.0,0,True,True,wed,0,28.76,2.31
+U161,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,2.0,0,True,True,wed,0,34.33,0.0
+U162,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,2.0,,False,False,,0,6.18,0.0
+U162,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,2.0,,False,False,,0,6.18,0.0
+U162,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,2.0,0,True,True,tue,0,16.08,2.48
+U163,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,5.0,0,True,True,tue,0,26.09,0.0
+U163,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,5.0,0,True,True,tue,0,26.09,0.0
+U163,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,5.0,0,True,True,tue,0,26.09,0.0
+U164,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,28.97,3.29
+U164,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,28.97,3.29
+U164,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,5.0,0,True,True,thu,0,28.97,3.29
+U165,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,mon,10.0,0,True,True,mon,0,14.97,7.19
+U165,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,mon,10.0,0,True,True,mon,0,14.97,7.19
+U165,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,10.0,0,True,True,mon,0,26.31,0.0
+U166,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,10.0,0,True,True,mon,0,19.02,0.78
+U166,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,10.0,0,True,True,mon,0,19.02,0.78
+U166,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,10.0,0,True,True,mon,0,24.8,0.63
+U167,baseline_home_straight,PVZ-TEST-02,Тест ПВЗ «Бардина»,mon,2.0,0,True,True,mon,0,11.41,7.24
+U167,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,mon,2.0,0,True,True,mon,0,9.1,17.58
+U167,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,2.0,0,True,True,mon,0,10.06,0.0
+U168,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,0.5,,False,False,,0,26.34,0.0
+U168,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,0.5,,False,False,,0,26.34,0.0
+U168,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,0.5,0,True,True,mon,0,44.18,0.63
+U169,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,thu,5.0,0,True,True,thu,0,14.98,13.34
+U169,baseline_home_walk,PVZ-TEST-02,Тест ПВЗ «Бардина»,thu,5.0,0,True,True,thu,0,14.66,0.38
+U169,ours,PVZ-TEST-07,Тест ПВЗ «Ленинский / МИСИС»,thu,5.0,0,True,True,thu,0,59.88,0.0
+U170,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,10.0,,False,False,,0,29.49,0.0
+U170,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,10.0,,False,False,,0,29.49,0.0
+U170,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,10.0,0,True,True,mon,0,37.1,3.29
+U171,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,1.0,0,True,True,tue,0,16.72,2.31
+U171,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,1.0,0,True,True,tue,0,16.72,2.31
+U171,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,1.0,0,True,True,tue,0,38.51,0.0
+U172,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,2.0,,False,False,,0,11.45,0.0
+U172,baseline_home_walk,PVZ-TEST-07,Тест ПВЗ «Ленинский / МИСИС»,tue,2.0,0,True,True,tue,0,7.22,6.71
+U172,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,2.0,0,True,True,tue,0,28.39,0.87
+U173,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,mon,2.0,,False,False,,0,11.81,11.44
+U173,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,2.0,0,True,True,mon,0,9.21,2.48
+U173,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,2.0,0,True,True,mon,0,9.21,2.48
+U174,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,tue,0.5,0,True,True,tue,0,26.66,12.15
+U174,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,0.5,0,True,True,tue,0,21.53,2.48
+U174,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,0.5,0,True,True,tue,0,59.05,0.0
+U175,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,5.0,0,True,True,tue,0,26.74,10.61
+U175,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,5.0,0,True,True,tue,0,26.74,10.61
+U175,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,5.0,0,True,True,tue,0,28.37,2.31
+U176,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,thu,1.0,,False,False,,0,7.6,1.42
+U176,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,thu,1.0,,False,False,,0,7.6,1.42
+U176,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,thu,1.0,0,True,True,thu,0,12.73,0.63
+U177,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,5.0,,False,False,,0,33.92,
+U177,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,5.0,0,True,True,tue,0,29.62,2.31
+U177,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,5.0,0,True,True,tue,0,29.62,2.31
+U178,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,10.0,0,True,True,thu,0,21.95,0.87
+U178,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,10.0,0,True,True,thu,0,21.95,0.87
+U178,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,38.57,0.58
+U179,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,10.0,,False,False,,0,21.03,0.0
+U179,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,fri,10.0,,False,False,,0,21.03,0.0
+U179,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,10.0,0,True,True,fri,0,28.65,2.48
+U180,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,fri,2.0,0,True,True,fri,0,7.12,6.07
+U180,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,fri,2.0,0,True,True,fri,0,7.12,6.07
+U180,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,2.0,0,True,True,fri,0,19.58,0.0
+U181,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,tue,1.0,0,True,True,tue,0,31.73,11.77
+U181,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,1.0,0,True,True,tue,0,26.6,2.48
+U181,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,1.0,0,True,True,tue,0,26.6,2.48
+U182,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,5.0,0,True,True,tue,0,2.91,5.3
+U182,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,5.0,0,True,True,tue,0,2.91,5.3
+U182,ours,PVZ-TEST-10,Тест ПВЗ «Ударница»,tue,5.0,0,True,True,tue,0,42.28,0.0
+U183,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,24.45,2.48
+U183,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,24.45,2.48
+U183,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,10.0,0,True,True,thu,0,55.37,2.31
+U184,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,2.0,,False,False,,0,20.48,1.42
+U184,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,mon,2.0,,False,False,,0,20.48,1.42
+U184,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,2.0,0,True,True,mon,0,25.61,0.63
+U185,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,tue,10.0,0,True,True,tue,0,31.24,14.58
+U185,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,10.0,0,True,True,tue,0,26.11,2.48
+U185,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,10.0,0,True,True,tue,0,26.11,2.48
+U186,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,tue,0.5,0,True,True,tue,0,27.14,11.84
+U186,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,tue,0.5,0,True,True,tue,0,22.33,2.48
+U186,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,0.5,0,True,True,tue,0,39.76,1.02
+U187,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,wed,10.0,,False,False,,0,33.33,
+U187,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,wed,10.0,0,True,True,wed,0,28.2,2.48
+U187,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,wed,10.0,0,True,True,wed,0,49.51,0.63
+U188,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,0.5,0,True,True,fri,0,12.08,3.4
+U188,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,0.5,0,True,True,fri,0,12.08,3.4
+U188,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,fri,0.5,0,True,True,fri,0,54.68,0.0
+U189,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,0.5,0,True,True,tue,0,26.18,2.31
+U189,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,0.5,0,True,True,tue,0,26.18,2.31
+U189,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,0.5,0,True,True,tue,0,26.18,2.31
+U190,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,2.0,0,True,True,tue,0,9.63,11.2
+U190,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,2.0,0,True,True,tue,0,9.63,11.2
+U190,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,2.0,0,True,True,tue,0,10.67,2.31
+U191,baseline_home_straight,PVZ-TEST-09,Тест ПВЗ «Академическая»,tue,0.5,,False,False,,0,6.96,0.53
+U191,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,tue,0.5,,False,False,,0,6.96,0.53
+U191,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,0.5,0,True,True,tue,0,24.96,0.0
+U192,baseline_home_straight,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,0.5,,False,False,,0,18.23,0.0
+U192,baseline_home_walk,PVZ-TEST-10,Тест ПВЗ «Ударница»,wed,0.5,,False,False,,0,18.23,0.0
+U192,ours,PVZ-TEST-05,Тест ПВЗ «Зелинского»,wed,0.5,0,True,True,wed,0,42.6,0.02
+U193,baseline_home_straight,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,0.5,0,True,True,tue,0,6.4,1.85
+U193,baseline_home_walk,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,0.5,0,True,True,tue,0,6.4,1.85
+U193,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,tue,0.5,0,True,True,tue,0,6.4,1.85
+U194,baseline_home_straight,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,2.0,0,True,True,mon,0,21.79,0.0
+U194,baseline_home_walk,PVZ-TEST-09,Тест ПВЗ «Академическая»,mon,2.0,0,True,True,mon,0,18.78,15.52
+U194,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,2.0,0,True,True,mon,0,21.79,0.0
+U195,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,5.0,0,True,True,fri,0,24.09,2.94
+U195,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,5.0,0,True,True,fri,0,24.09,2.94
+U195,ours,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,fri,5.0,0,True,True,fri,0,24.09,2.94
+U196,baseline_home_straight,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,0.5,0,True,True,mon,0,9.19,3.05
+U196,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,mon,0.5,0,True,True,mon,0,9.19,3.05
+U196,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,mon,0.5,0,True,True,mon,0,51.28,0.0
+U197,baseline_home_straight,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),tue,5.0,0,True,True,tue,0,18.17,16.72
+U197,baseline_home_walk,PVZ-TEST-11,Тест ПВЗ «Последний вагон» (Дм. Ульянова),tue,5.0,0,True,True,tue,0,18.17,16.72
+U197,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,5.0,0,True,True,tue,0,26.46,0.0
+U198,baseline_home_straight,POSTAMAT-TEST-08,Тест постамат «Корпус МИСИС»,thu,10.0,,False,False,,0,31.56,
+U198,baseline_home_walk,PVZ-TEST-06,Тест ПВЗ «Октябрьская-пл.»,thu,10.0,0,True,True,thu,0,26.43,2.48
+U198,ours,POSTAMAT-TEST-04,Тест постамат «Ленинский южн.»,thu,10.0,0,True,True,thu,0,57.7,1.02
+U199,baseline_home_straight,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,0.5,0,True,True,tue,0,2.92,2.46
+U199,baseline_home_walk,PVZ-TEST-05,Тест ПВЗ «Зелинского»,tue,0.5,0,True,True,tue,0,2.92,2.46
+U199,ours,PVZ-TEST-01,Тест ПВЗ «У трамвая 60-летия»,tue,0.5,0,True,True,tue,0,7.01,0.63

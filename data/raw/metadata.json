@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-10-15T10:29:03.945556+00:00",
+  "study_area": {
+    "misis_lon_lat": [
+      37.6077966,
+      55.7279401
+    ],
+    "home_lon_lat": [
+      37.5791629,
+      55.6980013
+    ],
+    "oktyabrskaya_exit_lon_lat": [
+      37.6108935,
+      55.7294105
+    ],
+    "akademicheskaya_exit_lon_lat": [
+      37.5741449,
+      55.6888255
+    ],
+    "oktyabrskaya_station_lon_lat": [
+      37.6109093,
+      55.7304961
+    ],
+    "akademicheskaya_station_lon_lat": [
+      37.5735148,
+      55.6878077
+    ],
+    "bbox_wgs84": [
+      37.550399256645996,
+      55.68323059033899,
+      37.63656024335401,
+      55.742710809661006
+    ],
+    "corridor_half_length_m": 2600.0,
+    "corridor_half_width_m": 1100.0,
+    "bbox_margin_m": 500.0
+  },
+  "coordinate_sources": {
+    "misis": "Nominatim: National University of Science and Technology MISIS",
+    "home": "жилой дом рядом с пр-том 60-летия Октября (адрес скрыт)",
+    "oktyabrskaya_exit": "OSM node 3583537400 railway=subway_entrance ref=2",
+    "akademicheskaya_exit": "OSM node 282413444 railway=subway_entrance ref=6"
+  },
+  "walk_speed_kmh": 5.0,
+  "walk_speed_m_per_min": 83.33333333333333,
+  "graph_nodes": 29035,
+  "graph_edges_directed": 81650,
+  "build_elapsed_s": 109.47,
+  "crs": "EPSG:32637",
+  "osm_retrieval": "live Overpass endpoint used by OSMnx",
+  "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+  "note": "Prototype area is fictional development data for pickup points; do not treat sample CSV as real CDEK locations."
+}

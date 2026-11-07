@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Посылка по пути — демо</title>
+<link rel="stylesheet" href="leaflet/leaflet.css"/>
+<style>
+  :root { --ink:#1c2430; --muted:#5c6675; --line:#d9d2c5; --accent:#c45c26; --green:#2f8f4e; --blue:#1f6f8b; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Segoe UI","PingFang SC",sans-serif; color:var(--ink); background:#f6f3ee; }
+  header { padding:16px 20px 8px; max-width:1200px; margin:0 auto; }
+  h1 { margin:0 0 4px; font-size:1.35rem; }
+  .sub { color:var(--muted); font-size:0.92rem; max-width:80ch; }
+  .wrap { max-width:1200px; margin:0 auto; padding:0 20px 28px; display:grid; grid-template-columns:1.4fr 1fr; gap:14px; }
+  @media (max-width:960px){ .wrap{ grid-template-columns:1fr; } }
+  .card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
+  #map { height:560px; border-radius:10px; background:#e7eef2; }
+  h2 { font-size:1.02rem; margin:0 0 10px; }
+  ol { margin:0; padding-left:1.2em; }
+  li { margin:0 0 8px; line-height:1.4; }
+  .pill { display:inline-block; padding:1px 8px; border-radius:999px; background:#e8f1e9; color:var(--green); font-size:0.8rem; }
+  .pill.blue { background:#e5eef2; color:var(--blue); }
+  .pill.warn { background:#f8ebe3; color:var(--accent); }
+  .note { font-size:0.85rem; color:var(--muted); margin-top:10px; }
+  .notif { background:#f3f7f4; border-left:3px solid var(--green); padding:10px 12px; border-radius:8px; margin-top:8px; line-height:1.45; }
+  .leg { font-size:0.88rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Посылка по пути — демо</h1>
+  <div class="sub">
+    Привычные маршруты пользователя (дом ↔ университет МИСИС) и пункты выдачи СДЭК, до которых меньше
+    всего идти в сторону от маршрута. День: <b id="day"></b>.
+    <div id="source"></div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="card">
+    <div id="map"></div>
+    <div class="note" id="legend"></div>
+  </div>
+  <div class="card">
+    <h2>Сценарий 1 — выбор пункта по пути</h2>
+    <ol id="s1"></ol>
+    <h2 style="margin-top:16px">Сценарий 2 — забрать по пути</h2>
+    <div id="s2"></div>
+    <h2 style="margin-top:16px">Пешие участки маршрута</h2>
+    <div id="legs"></div>
+  </div>
+</div>
+<script src="leaflet/leaflet.js"></script>
+<script>
+const DATA = {"day_ru": "в среду, 14 октября", "legs": [{"from": "home", "to": "tram_60letiya", "label": "пешком до трамвая «Проспект 60-летия Октября»", "periods": ["morning"], "minutes": 6.3, "coords": [[37.579157, 55.698129], [37.578693, 55.698182], [37.578561, 55.698198], [37.578485, 55.698206], [37.578619, 55.698582], [37.578709, 55.698858], [37.578812, 55.699177], [37.578837, 55.699243], [37.578885, 55.699372], [37.578947, 55.699522], [37.57897, 55.699588], [37.579076, 55.699884], [37.579217, 55.700279], [37.579453, 55.700941], [37.579419, 55.701072], [37.579419, 55.701187], [37.579512, 55.701357], [37.579592, 55.701439], [37.579615, 55.701463], [37.579686, 55.701525], [37.579718, 55.70159], [37.579776, 55.701702], [37.579846, 55.701849], [37.580281, 55.702139], [37.580191, 55.70219], [37.580144, 55.702218], [37.580118, 55.702232], [37.580088, 55.702249], [37.580038, 55.702277], [37.579988, 55.702305]]}, {"from": "oktyabrskaya_exit", "to": "misis", "label": "пешком от м. «Октябрьская» до МИСИС", "periods": ["morning"], "minutes": 5.1, "coords": [[37.610981, 55.729357], [37.611406, 55.729348], [37.611478, 55.729347], [37.611474, 55.72925], [37.611469, 55.729169], [37.611532, 55.729168], [37.611625, 55.729166], [37.611616, 55.729037], [37.611541, 55.728966], [37.611336, 55.72883], [37.611134, 55.728709], [37.610763, 55.728492], [37.610066, 55.728101], [37.609076, 55.727532], [37.609044, 55.727549], [37.608896, 55.727629], [37.60884, 55.727659], [37.608451, 55.727436], [37.608376, 55.727476], [37.608402, 55.727627], [37.607963, 55.727862]]}, {"from": "home", "to": "metro_leninsky_south", "label": "пешком до м. «Ленинский проспект (южный)»", "periods": ["morning"], "minutes": 14.3, "coords": [[37.579157, 55.698129], [37.578693, 55.698182], [37.578561, 55.698198], [37.578485, 55.698206], [37.578619, 55.698582], [37.578709, 55.698858], [37.578812, 55.699177], [37.578837, 55.699243], [37.578885, 55.699372], [37.578947, 55.699522], [37.57897, 55.699588], [37.579076, 55.699884], [37.579217, 55.700279], [37.579453, 55.700941], [37.579419, 55.701072], [37.579419, 55.701187], [37.579512, 55.701357], [37.579592, 55.701439], [37.579615, 55.701463], [37.579686, 55.701525], [37.579718, 55.70159], [37.579776, 55.701702], [37.579846, 55.701849], [37.580281, 55.702139], [37.580191, 55.70219], [37.580144, 55.702218], [37.580118, 55.702232], [37.580088, 55.702249], [37.580038, 55.702277], [37.579988, 55.702305], [37.580499, 55.7026], [37.580989, 55.702877], [37.581213, 55.703], [37.582148, 55.703526], [37.582818, 55.703903], [37.583488, 55.70428], [37.584183, 55.70467], [37.584545, 55.704876], [37.584593, 55.705287], [37.584775, 55.70582], [37.584831, 55.706083], [37.585132, 55.70628], [37.585158, 55.706339], [37.585154, 55.706431], [37.58513, 55.706445], [37.584913, 55.706567], [37.585024, 55.706645], [37.585337, 55.706853], [37.585144, 55.706854]]}, {"from": "misis", "to": "oktyabrskaya_exit", "label": "пешком от МИСИС до м. «Октябрьская»", "periods": ["evening"], "minutes": 5.1, "coords": [[37.607963, 55.727862], [37.608402, 55.727627], [37.608376, 55.727476], [37.608451, 55.727436], [37.60884, 55.727659], [37.608896, 55.727629], [37.609044, 55.727549], [37.609076, 55.727532], [37.610066, 55.728101], [37.610763, 55.728492], [37.611134, 55.728709], [37.611336, 55.72883], [37.611541, 55.728966], [37.611616, 55.729037], [37.611625, 55.729166], [37.611532, 55.729168], [37.611469, 55.729169], [37.611474, 55.72925], [37.611478, 55.729347], [37.611406, 55.729348], [37.610981, 55.729357]]}, {"from": "tram_60letiya", "to": "home", "label": "пешком от трамвая «Проспект 60-летия Октября» домой", "periods": ["evening"], "minutes": 6.3, "coords": [[37.579988, 55.702305], [37.580038, 55.702277], [37.580088, 55.702249], [37.580118, 55.702232], [37.580144, 55.702218], [37.580191, 55.70219], [37.580281, 55.702139], [37.579846, 55.701849], [37.579776, 55.701702], [37.579718, 55.70159], [37.579686, 55.701525], [37.579615, 55.701463], [37.579592, 55.701439], [37.579512, 55.701357], [37.579419, 55.701187], [37.579419, 55.701072], [37.579453, 55.700941], [37.579217, 55.700279], [37.579076, 55.699884], [37.57897, 55.699588], [37.578947, 55.699522], [37.578885, 55.699372], [37.578837, 55.699243], [37.578812, 55.699177], [37.578709, 55.698858], [37.578619, 55.698582], [37.578485, 55.698206], [37.578561, 55.698198], [37.578693, 55.698182], [37.579157, 55.698129]]}, {"from": "metro_leninsky_south", "to": "home", "label": "пешком от м. «Ленинский проспект (южный)» домой", "periods": ["evening"], "minutes": 14.3, "coords": [[37.585144, 55.706854], [37.585337, 55.706853], [37.585024, 55.706645], [37.584913, 55.706567], [37.58513, 55.706445], [37.585154, 55.706431], [37.585158, 55.706339], [37.585132, 55.70628], [37.584831, 55.706083], [37.584775, 55.70582], [37.584593, 55.705287], [37.584545, 55.704876], [37.584183, 55.70467], [37.583488, 55.70428], [37.582818, 55.703903], [37.582148, 55.703526], [37.581213, 55.703], [37.580989, 55.702877], [37.580499, 55.7026], [37.579988, 55.702305], [37.580038, 55.702277], [37.580088, 55.702249], [37.580118, 55.702232], [37.580144, 55.702218], [37.580191, 55.70219], [37.580281, 55.702139], [37.579846, 55.701849], [37.579776, 55.701702], [37.579718, 55.70159], [37.579686, 55.701525], [37.579615, 55.701463], [37.579592, 55.701439], [37.579512, 55.701357], [37.579419, 55.701187], [37.579419, 55.701072], [37.579453, 55.700941], [37.579217, 55.700279], [37.579076, 55.699884], [37.57897, 55.699588], [37.578947, 55.699522], [37.578885, 55.699372], [37.578837, 55.699243], [37.578812, 55.699177], [37.578709, 55.698858], [37.578619, 55.698582], [37.578485, 55.698206], [37.578561, 55.698198], [37.578693, 55.698182], [37.579157, 55.698129]]}], "rides": [{"mode": "tram", "label": "трамвай", "minutes": 10.0, "coords": [[55.7023082, 37.5801918], [55.7068542, 37.5851442]]}, {"mode": "metro", "label": "метро", "minutes": 10.0, "coords": [[55.7068542, 37.5851442], [55.7294105, 37.6108935]]}], "points": [{"id": "MSK160", "name": "пер. Малый Левшинский, 5", "lat": 55.741206, "lon": 37.588916, "type": "pvz", "max_weight_kg": 35.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK374", "name": "ул. Ефремова, 18", "lat": 55.722968, "lon": 37.569159, "type": "pvz", "max_weight_kg": 35.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK302", "name": "Варшавское ш., 26 с32", "lat": 55.687452, "lon": 37.621802, "type": "pvz", "max_weight_kg": 40.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK55", "name": "пер. Пуговишников, 16", "lat": 55.732164, "lon": 37.584074, "type": "pvz", "max_weight_kg": 50.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK273", "name": "пер. Можайский, 5", "lat": 55.739803, "lon": 37.547504, "type": "pvz", "max_weight_kg": 50.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK294", "name": "ул. Пятницкая, 17/4с3", "lat": 55.743102, "lon": 37.629161, "type": "pvz", "max_weight_kg": 50.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK537", "name": "2-й Хвостов переулок, 12", "lat": 55.735454, "lon": 37.615003, "type": "pvz", "max_weight_kg": 60.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK2495", "name": "пер. Большой Саввинский, 2к1", "lat": 55.73653, "lon": 37.569935, "type": "pvz", "max_weight_kg": 50.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK50", "name": "ул. Дмитрия Ульянова, 36", "lat": 55.683132, "lon": 37.585449, "type": "pvz", "max_weight_kg": 35.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK949", "name": "ул. Большая Черёмушкинская, 2Ас1", "lat": 55.691435, "lon": 37.599911, "type": "pvz", "max_weight_kg": 100.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK272", "name": "ул. Павла Андреева, 28 корп.7", "lat": 55.720514, "lon": 37.618075, "type": "pvz", "max_weight_kg": 36.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK171", "name": "пр-т Нахимовский, 67 корп. 1", "lat": 55.680179, "lon": 37.556909, "type": "pvz", "max_weight_kg": 35.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK2654", "name": "пер. 1-й Монетчиковский, 8", "lat": 55.732544, "lon": 37.629114, "type": "pvz", "max_weight_kg": 50.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK2349", "name": "пер. 1-й Щипковский, 3", "lat": 55.722213, "lon": 37.630364, "type": "pvz", "max_weight_kg": 30.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK2497", "name": "пр. 6-й Рощинский, 1с4", "lat": 55.708195, "lon": 37.615688, "type": "pvz", "max_weight_kg": 50.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK2629", "name": "ул. Большая Полянка, 28к1", "lat": 55.736012, "lon": 37.618659, "type": "pvz", "max_weight_kg": 15.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK1347", "name": "пр-т Комсомольский, 24, стр.1", "lat": 55.728645, "lon": 37.579809, "type": "postamat", "max_weight_kg": 30.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK2649", "name": "пр-т Ленинский, 44", "lat": 55.701318, "lon": 37.567159, "type": "pvz", "max_weight_kg": 100.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK2356", "name": "ул. Орджоникидзе, 9к1", "lat": 55.709363, "lon": 37.597866, "type": "pvz", "max_weight_kg": 75.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK2626", "name": "ул. Шаболовка, 29к2", "lat": 55.721655, "lon": 37.610682, "type": "pvz", "max_weight_kg": 15.0, "hours_note": "", "reason": "detour", "reason_ru": "по дороге из вуза домой, крюк +19 мин, открыт до 22:00", "detour_min": 19.42}, {"id": "MSK2504", "name": "ул. Архитектора Щусева, 5к2", "lat": 55.696441, "lon": 37.634726, "type": "pvz", "max_weight_kg": 50.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK1788", "name": "ул. Шаболовка, 24", "lat": 55.72088, "lon": 37.609344, "type": "pvz", "max_weight_kg": 100.0, "hours_note": "", "reason": "open_latest", "reason_ru": "дольше всех открыт (до 23:00), крюк +21 мин", "detour_min": 20.98}, {"id": "MSK575", "name": "ул. Автозаводская, 18", "lat": 55.705042, "lon": 37.639824, "type": "postamat", "max_weight_kg": 30.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK524", "name": "ул. Большая Татарская, 35 стр. 3", "lat": 55.737451, "lon": 37.635485, "type": "pvz", "max_weight_kg": 35.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK350", "name": "ул. Дмитрия Ульянова, 17 корп. 1", "lat": 55.689015, "lon": 37.571336, "type": "pvz", "max_weight_kg": 30.0, "hours_note": "", "reason": "home", "reason_ru": "ближе всего к дому (15 мин от дома), крюк +29 мин, открыт до 21:00", "detour_min": 29.04}, {"id": "MSK520", "name": "Университетский пр-т, 6, корп. 3", "lat": 55.699491, "lon": 37.55283, "type": "pvz", "max_weight_kg": 35.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}, {"id": "MSK2674", "name": "ул. Автозаводская, 26/1", "lat": 55.706368, "lon": 37.633139, "type": "pvz", "max_weight_kg": 15.0, "hours_note": "", "reason": null, "reason_ru": null, "detour_min": null}], "landmarks": [{"id": "home", "name": "Дом", "lat": 55.6980013, "lon": 37.5791629}, {"id": "misis", "name": "МИСИС", "lat": 55.7279401, "lon": 37.6077966}, {"id": "tram_60letiya", "name": "Трамвай «60-летия Октября»", "lat": 55.7023082, "lon": 37.5801918}, {"id": "metro_leninsky_south", "name": "Метро «Ленинский проспект» (южн.)", "lat": 55.7068542, "lon": 37.5851442}, {"id": "oktyabrskaya_exit", "name": "Метро «Октябрьская» (выход)", "lat": 55.7294105, "lon": 37.6108935}], "scenario1": [{"point_id": "MSK2626", "name": "ул. Шаболовка, 29к2", "reason": "detour", "reason_ru": "по дороге из вуза домой, крюк +19 мин, открыт до 22:00", "detour_min": 19.42, "lat": 55.721655, "lon": 37.610682}, {"point_id": "MSK350", "name": "ул. Дмитрия Ульянова, 17 корп. 1", "reason": "home", "reason_ru": "ближе всего к дому (15 мин от дома), крюк +29 мин, открыт до 21:00", "detour_min": 29.04, "lat": 55.689015, "lon": 37.571336}, {"point_id": "MSK1788", "name": "ул. Шаболовка, 24", "reason": "open_latest", "reason_ru": "дольше всех открыт (до 23:00), крюк +21 мин", "detour_min": 20.98, "lat": 55.72088, "lon": 37.609344}], "scenario2": {"point_id": "MSK2626", "point_name": "ул. Шаболовка, 29к2", "notification_ru": "Можно забрать вечером по дороге из вуза домой, крюк +19 мин. Пункт открыт до 22:00.", "ok": true}, "source_ru": "27 пунктов СДЭК с сайта cdek.ru (часы работы и лимиты веса на 16.10.2026)"};
+document.getElementById('day').textContent = DATA.day_ru;
+document.getElementById('source').textContent = 'Данные: ' + DATA.source_ru + '.';
+
+const PERIOD_RU = { morning: 'утро', evening: 'вечер' };
+const REASON_RU = { detour: 'меньше всего крюк', home: 'ближе всего к дому', open_latest: 'дольше всех открыт' };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const map = L.map('map');
+// tile.openstreetmap.org refuses pages opened from disk and CARTO now wants an
+// API key (both answer with a picture instead of an error, so no fallback can
+// detect it). Esri World Street Map works without a key or Referer.
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+  maxZoom: 19,
+  attribution: 'Подложка &copy; Esri, HERE, Garmin, &copy; участники OpenStreetMap'
+}).addTo(map);
+
+const colors = { morning:'#2f8f4e', evening:'#1f6f8b', both:'#c45c26' };
+const bounds = L.latLngBounds([]);
+for (const leg of DATA.legs) {
+  const key = leg.periods.length > 1 ? 'both' : leg.periods[0];
+  const latlngs = leg.coords.map(([lon, lat]) => [lat, lon]);
+  latlngs.forEach(ll => bounds.extend(ll));
+  L.polyline(latlngs, { color: colors[key] || '#888', weight: key === 'evening' ? 4 : 7,
+                       opacity: key === 'evening' ? 0.95 : 0.55 })
+    .addTo(map).bindPopup(`<b>${esc(leg.label)}</b><br>${leg.minutes} мин`);
+}
+
+for (const r of DATA.rides) {
+  r.coords.forEach(ll => bounds.extend(ll));
+  L.polyline(r.coords, { color: '#5c6675', weight: 3, opacity: 0.8, dashArray: '6 6' })
+    .addTo(map).bindTooltip(`${r.label}, ~${r.minutes} мин`, { sticky: true });
+}
+
+for (const lm of DATA.landmarks) {
+  L.circleMarker([lm.lat, lm.lon], {
+    radius: 7, color:'#1c2430', fillColor:'#1c2430', fillOpacity:0.9, weight:1
+  }).addTo(map).bindPopup(`<b>${esc(lm.name)}</b>`)
+    .bindTooltip(lm.id === 'home' ? 'Дом' : lm.id === 'misis' ? 'МИСИС' : '',
+                 { permanent: lm.id === 'home' || lm.id === 'misis', direction: 'left', offset: [-6, 0] });
+  bounds.extend([lm.lat, lm.lon]);
+}
+
+const topIds = new Set(DATA.scenario1.map(r => r.point_id));
+for (const p of DATA.points) {
+  const isTop = topIds.has(p.id);
+  const color = p.type === 'postamat' ? '#1f6f8b' : '#c45c26';
+  const m = L.circleMarker([p.lat, p.lon], {
+    radius: isTop ? 10 : 6,
+    color: isTop ? '#fff200' : '#ffffff',
+    weight: isTop ? 2.5 : 1,
+    fillColor: color, fillOpacity: 0.9
+  }).addTo(map);
+  const typeRu = p.type === 'postamat' ? 'постамат' : 'пункт выдачи';
+  let label = `<b>${esc(p.name)}</b><br>${typeRu} СДЭК · посылки до ${p.max_weight_kg} кг`;
+  if (p.hours_note) label += `<br><i>${esc(p.hours_note)}</i>`;
+  if (p.reason_ru) label += `<br><span class="pill">${esc(p.reason_ru)}</span>`;
+  m.bindPopup(label);
+  if (isTop) {
+    const rank = DATA.scenario1.findIndex(x => x.point_id === p.id) + 1;
+    bounds.extend([p.lat, p.lon]);
+    const text = String(rank);
+    L.marker([p.lat, p.lon], {
+      icon: L.divIcon({
+        className: '',
+        html: `<div style="background:#1c2430;color:#fff;font:600 12px/18px sans-serif;width:18px;text-align:center;border-radius:50%;">${text}</div>`,
+        iconSize: null, iconAnchor: rank === 1 ? [-8, 22] : rank === 2 ? [-8, -4] : [26, 9]
+      })
+    }).addTo(map);
+  }
+}
+
+const s1 = document.getElementById('s1');
+for (const r of DATA.scenario1) {
+  const li = document.createElement('li');
+  li.innerHTML = `<b>${esc(r.name)}</b> — ${esc(r.reason_ru)} <span class="pill">${REASON_RU[r.reason] || r.reason}</span>`;
+  s1.appendChild(li);
+}
+
+const s2 = document.getElementById('s2');
+s2.innerHTML = `<div class="leg">Выбран пункт: <b>${esc(DATA.scenario2.point_name)}</b></div>
+  <div class="notif">${esc(DATA.scenario2.notification_ru)}</div>`;
+
+const legs = document.getElementById('legs');
+for (const leg of DATA.legs) {
+  const div = document.createElement('div');
+  div.className = 'leg';
+  const when = leg.periods.map(x => PERIOD_RU[x] || x).join(' и ');
+  div.textContent = `${leg.label}: ${leg.minutes} мин (${when})`;
+  legs.appendChild(div);
+}
+
+document.getElementById('legend').innerHTML =
+  'Сплошные линии — пешие участки маршрута: широкая зелёная утром, синяя вечером (часто идут по тем же улицам). ' +
+  'Серый пунктир — поездка на трамвае или метро (пешком там не идут, поэтому пункты там не ищем). ' +
+  'Чёрные точки — дом, вуз и остановки. Оранжевые кружки — пункты выдачи, синие — постаматы. ' +
+  'Жёлтая обводка и номер — три пункта из сценария 1.';
+if (bounds.isValid()) map.fitBounds(bounds.pad(0.08)); else map.setView([55.71, 37.595], 13);
+</script>
+</body>
+</html>
